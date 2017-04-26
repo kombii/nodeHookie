@@ -1,0 +1,61 @@
+body{overflow:hidden;background-color:#4c3f33;}
+input{height:24px;border-width:0;font-size:14px;}
+button{height:28px;background-color:#0d293e;color:#CCC;border:1px solid #CCC;padding:0 12px;font-size:14px;cursor:pointer;}
+button.red{background-color:#C33;border:1px solid #C33;color:#FFF;}
+button,.noSelect{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+.bar{height:31px;line-height:16px;border-bottom:1px solid #654;padding:8px;color:#CCC;}
+.bar div{float:left;min-width:16px;min-height:31px;}
+.bar .logo{float:right;font-size:32px;line-height:32px;font-weight:bold;color:#654}
+.content{min-width:800px;overflow:auto;_height:1%;position:relative;}
+.menuLeft{z-index:19;width:20%;min-width:192px;float:left;position:absolute;font-size:18px;line-height:32px;color:#CCC;background-color:#3c3f41;}
+.menuLeft .btnLeft{background-color:#4c4f51;color:#777;padding:0 8px;border-right:1px solid #654;}
+.menuLeft .btnLeft div{float:right;cursor:pointer;width:28px;height:31px;text-align:center;}
+.menuLeft .btnLeft div:hover{background-color:#3c3f41}
+.menuLeft .list{padding:8px;overflow:hidden;overflow-y:auto;}
+.menuLeft .list .prefix{background-color:#0d293e;padding:0 16px;margin-top:8px;}
+.menuLeft .list .file{padding-left:32px;font-size:16px;}
+.menuLeft .list .file p{margin:0;cursor:pointer;}
+.menuLeft .list .file p:hover{color:#FFF;}
+.menuLeft .list .file span{color:#666;}
+#popup .close{float:right;color:#333;padding:0 8px;cursor:pointer;}
+#popup .title{background-color:#CCC;color:#333;}
+#popup .title span{margin-right:4px;}
+#popup .button{text-align:right;}
+.code{width:80%;float:right;background-color:#fcf5e2;padding-top:32px;position:relative;}
+.code .codeBar{z-index:9;width:10000px;height:32px;line-height:32px;background-color:#3c3f41;position:absolute;margin-top:-32px;}
+.code .codeBar div{height:32px;padding:0 8px;color:#999;float:left;min-width:64px;border:1px solid #654;border-width:0 1px 0 0;cursor:pointer;}
+.code .codeBar .ico{margin-right:4px;}
+.code .codeBar .change{margin-left:4px;color:#C33;}
+.code .codeBar .close{margin-left:8px;float:right;}
+.code .codeBar .close:hover{color:#CCC;}
+.code .codeBar .file:hover{color:#CCC;}
+.code .codeBar .current{background-color:#0d293e;color:#FFF;}
+.code .codeButton{z-index:11;background-color:#4c4f51;width:137px;height:32px;line-height:32px;position:absolute;margin-top:-32px;text-align:center;font-size:18px;cursor:pointer;left:100%;margin-left:-150px;padding:0 8px 0 4px;border-left:1px solid #654;color:#CCC;}
+.code .button{float:right;width:28px;height:31px;}
+.code .button:hover{background-color:#3c3f41}
+.code .icoLeft,.code .icoRight{font-size:16px;width:20px;color:#999}
+.code .icoRight{margin-right:4px;}
+.code .icoBlank{width:8px;border-left:1px solid #654;}
+#fileUpload{border:1px solid #CCC;border-width:0 0 1px 0;width:100%;}
+.txtRename{padding:0 4px;color:#333;background-color:#CCC;width:160px;}
+.footer{height:47px;line-height:48px;border-top:1px solid #654;}
+.footer .openConsole{float:right;cursor:pointer;background-color:#963;margin:8px;line-height:31px;width:32px;text-align:center;}
+.footer .console{z-index:21;background-color:#000;width:480px;position:absolute;font-size:14px;padding:8px;left:100%;top:88px;margin-left:-496px;color:#CCC;line-height:18px;}
+.footer .closeConsole{cursor:pointer;background-color:#963;border:8px solid #000;position:absolute;margin-top:-48px;margin-left:-8px;top:100%;font-size:18px;line-height:32px;width:32px;text-align:center;}
+.footer .input{position:absolute;margin-top:-48px;margin-left:40px;top:100%;height:32px;width:440px;padding:8px 0;}
+.footer .input div{width:16px;line-height:32px;float:left;text-align:center;background-color:#CCC;color:#333;}
+.footer .input input{width:408px;padding:0 8px;height:32px;}
+.footer .input input:disabled{background-color:#777;}
+.footer .output{width:100%;margin-bottom:40px;color:#FFF;overflow:auto;}
+.footer .output .c{color:#CCC;}
+.footer .output .e{color:#F33;}
+.CodeMirror-line-numbers{font-size:18px;line-height:22px;padding:8px 0;color:#B97;border-right:1px solid #B97;}
+.CodeMirror-line-numbers div{padding:0 8px;}
+.gutter{background-color:#CCC;}
+
+.hidden{display:none;}
+.nowrap{white-space:nowrap;overflow:hidden;}
+.fLeft{float:left;}
+.fRight{float:right;}
+.abs{position:absolute;}
+.noSelect{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}

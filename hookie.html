@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>nodeHOOKIE</title></head>
+<body style="margin:0;padding:0;font-family:consolas,monospace;font-size:16px;">
+<div id="mask" style="z-index:98;width:100%;height:100%;position:absolute;background-color:#000;opacity:0.5;"></div>
+<div id="popup" style="z-index:99;min-width:120px;min-height:48px;text-align:center;background-color:#4c3f33;color:#CCC;border:1px solid #CCC;position:absolute;left:50%;margin-left:-60px;top:42%;margin-top:-24px;">
+	<div class="close" style="display:none;">✖</div>
+	<div class="title"></div>
+	<div class="message" style="line-height:48px;">LOADING</div>
+	<div class="button"></div>
+</div>
+<div id="body" style="display:none;">
+	<div class="bar nowrap">
+		<div class="logo noSelect">nodeHOOKIE</div>
+		<div>
+			CHIP#<span id="info_chipId">------</span>
+			<br />
+			FLASH#<span id="info_flashId">-------</span>
+		</div>
+		<div></div>
+		<div>
+			NODEMCU: <span id="info_version">-.-.-</span>
+			<br />
+			SPIFFS: <span id="info_spiffs">-M/--MHz</span>
+		</div>
+		<div></div>
+		<div>
+			ROM: <span id="info_rom">-/-M</span>
+			<br />
+			RAM: <span id="info_ram">-</span>
+		</div>
+		<div></div>
+		<div>
+			AP: <span id="info_ap">CH#--/----</span>
+			<br />
+			SSID: <span id="info_ssid">--------</span>
+		</div>
+		<div></div>
+		<div>
+			GATEWAY: <span id="info_gateway">-.-.-.-</span>
+			<br />
+			CONNECTION: <span id="info_connection">-</span>
+		</div>
+	</div>
+	<div class="content">
+		<div class="menuLeft">
+			<div class="btnLeft nowrap noSelect">
+				<div class="btnRefresh" title="REFRESH LIST">🔄</div>
+				<div class="btnCreate" title="UPLOAD FILE">🆙</div>
+				FILE SYSTEM
+			</div>
+			<div class="list"></div>
+		</div>
+		<div class="code nowrap">
+			<div class="codeBar nowrap noSelect"></div>
+			<div class="codeButton nowrap noSelect">
+				<div class="button icoSaveAll" title="SAVE ALL">📚</div>
+				<div class="button icoSave" title="SAVE FILE">💾</div>
+				<div class="button icoNew" title="NEW FILE">📖</div>
+				<div class="button icoBlank"></div>
+				<div class="button icoRight"><span>▶</span></div>
+				<div class="button icoLeft"><span>◀</span></div>
+			</div>
+			<textarea id="codeArea" class="hidden" title></textarea>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="openConsole noSelect" title="SHOW CONSOLE">💻</div>
+		<div class="console hidden">
+			<div class="output"></div>
+			<div class="closeConsole noSelect" title="HIDE CONSOLE">💻</div>
+			<div class="input"><div>&gt;</div><input type="text" value="" disabled="disabled" /></div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="common_jquery.js"></script>
+<script type="text/javascript" src="hookie_codemirror.js"></script>
+<script type="text/javascript" src="hookie.js"></script>
+<link rel="stylesheet" href="hookie.css">
+<link rel="shortcut icon" href="hookie_favicon.ico" type="image/x-icon" />
+</body>
+</html>
