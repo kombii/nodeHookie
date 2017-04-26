@@ -25,5 +25,5 @@ while true do
 	end
 end
 fp:close()
---file.remove('package.b64')
---file.remove('install.lua')
+file.remove('package.b64')
+file.remove('install.lua')
